@@ -4,65 +4,80 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Earth</title>
-    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/earth.css">
 </head>
 <body class="earth-page">
 
-    <div class="header-earth">
+    <!-- Navigation bar -->
+     <nav class="navbar">
+        <a href="index.html">Home</a>
+        <a href="sun.html">Sun</a>
+        <a href="moon.html">Moon</a>
+        <a href="mercury.html">Mercury</a>
+        <a href="venus.html">Venus</a>
+        <a href="earth.html">Earth</a>
+        <a href="mars.html">Mars</a>
+        <a href="jupiter.html">Jupiter</a>
+        <a href="satern.html">Saturn</a>
+        <a href="uranus.html">Uranus</a>
+        <a href="neptune.html">Neptune</a>
+     </nav>
+
+     <!-- Page title -->
+    <header class="page-header">
             <h1>What is the Earth?</h1>
-    </div>
+    </header>
 
     <div class="sub-text">
-    <img src="../images/earth.jpg" alt="A image of the Earth" width="350" height="350">
+    <img src="../images/earth.jpg" alt="Earth seen from space, showing blue oceans and white clouds" width="350" height="350">
     <p>The <strong>Earth</strong> is the only planet with living things</p>
     </div>
 
-    <div class="container">
-        <div class="top">
+    <main class="container">
+
+        <!-- Fun facts begin here ! -->
+        <section class="card">
         <h3>Fun Facts about the Earth</h3>
         <ul>
-            <li><p>
-                Earth is the third planet from the Sun and the fifth largest planet.
-            </p></li>
-            <li><p>
-                Only place we know of inhabited by living things.
-            </p></li>
-
-            <li><p>
-                Earth is the only planet in the solar system whose English name does not come from
-                Greek or Roman mythology. The neame was taken from Old English and Germanic.
-                It means "the ground."
-            </p></li>
-
-            <li><p>
-                Earth's life begin about 3.8 billion years ago
-            </p></li>
-
-            <li><p>One complete rotation is every 23.9 hourss</p></li>
-
-            <li><p>
-                Takes 365.25 days to complete one trip around the Sun 
-            </p></li>
-
-            <li><p>
-                Earth is composed of four main layers; inner core, outer core,
-                mantle, and crust 
-            </p></li>
+            <li>Earth is the third planet from the Sun and the fifth largest planet.</li>
+            <li>The only place we know that Earth is inhabited by living things.</li>
+            <li>Earth is the only planet in the solar system whose English name does not come from
+                Greek or Roman mythology. The neame was taken from Old English and Germanic. It means "the ground."</li>
+            <li>Earth's life begin about 3.8 billion years ago.</li>
+            <li>One complete rotation is every 23.9 hourss</li>
+            <li>Takes 365.25 days to complete one trip around the Sun.</li>
+            <li>Earth is composed of four main layers; inner core, outer core,
+            mantle, and crust.</li>
         </ul>
-        </div>
+    </section>
 
-        <div class="middle">
+        <section class="card">
             <h3>Why is the Earth important</h3>
             <p>
                 Earth is the only world in the solar system with liquid surface
                 water and an oxygen-rich atmosphere capable of sustaining a rich biosphere
             </p>
-        </div>
+        </section>
 
-        <div class="last">
-            <h3>How much do you weigh if you were in earth ?</h3>
-        </div>
-        </div>
-    
+        <!-- Javascript feature -->
+        <section class="card">
+            <h3>Explore the Earth's Layers</h3>
+            <!-- REMBER TO INCLUDE EARTH LAYER IMG -->
+            <img src="images/some_pic.jpg" alt="Cutaway diagram showing Earth's four layers" width="350">
+            
+            <div class="layer-buttons">
+                <button class="layer-btn" data-layer="crust">Crust</button>
+                <button class="layer-btn" data-layer="mantle">Mantle</button>
+                <button class="layer-btn" data-layer="outer-core">Outer Core</button>
+                <button class="layer-btn" data-layer="inner-core">Inner Core</button>
+            </div>
+
+            <p id="layer-info">Click a layer to learn about it.</p>
+        </section>
+
+    </main>
+
+    <script src="js/earth.js"></script>  
 </body>
 </html>
