@@ -4,44 +4,119 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Solar System</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/home.css">
 </head>
 <body class="home-page">
 
-    <h1>Welcome to our Solar System</h1>
+    <!-- Navigation bar -->
+     <nav class="navbar">
+        <a href="index.html">Home</a>
+        <a href="sun.html">Sun</a>
+        <a href="moon.html">Moon</a>
+        <a href="planets/mercury.html">Mercury</a>
+        <a href="planets/venus.html">Venus</a>
+        <a href="planets/earth.html">Earth</a>
+        <a href="planets/mars.html">Mars</a>
+        <a href="planets/jupiter.html">Jupiter</a>
+        <a href="planets/satern.html">Saturn</a>
+        <a href="planets/uranus.html">Uranus</a>
+        <a href="planets/neptune.html">Neptune</a>
+     </nav>
 
-    <div class="solar-system">
+    <header class="page-header">
+        <h1>Welcome to our Solar System</h1>
+    </header>
 
-    <a href="./sun.html" class="planet sun">
-         <img src="./images/sun1.jpg" alt="Sun">
-        <span>Sun</span>
-    </a>
+    <!-- The Intro -->
+    <section class="intro">
+        <p>
+            ...(Remember to write intro)
+        </p>
+    </section>
 
-    <a href="./moon.html" class="planet moon">
-        <img src="./images/moon1.jpg" alt="Moon">
-        <span>Moon</span>
-    </a>
+    <!-- This js feature will show the animated solar system and can freely pause it -->
+     <button class="btn" id="show-model">Show the solar system in motion</button>
+
+     <div id="model-wrap" class="hidden">
+        <button class="btn" id="pause-btn">Stop Animation</button>
+        <div class="model-scroll">
+            <div class="orbit-model">
+                <div class="sun-model"></div>
+            <div class="orbit mercury-orbit">
+                <div class="planet mercury"></div>
+            </div>
+            <div class="orbit venus-orbit">
+                <div class="planet venus"></div>
+            </div>
+            <div class="orbit earth-orbit">
+                <div class="planet earth"></div>
+            </div>
+            <div class="orbit mars-orbit">
+                <div class="planet mars"></div>
+            </div>
+            <div class="orbit jupiter-orbit">
+                <div class="planet jupiter"></div>
+            </div>
+            <div class="orbit saturn-orbit">
+                <div class="planet saturn"></div>
+            </div>
+            <div class="orbit uranus-orbit">
+                <div class="planet uranus"></div>
+            </div>
+            </div>
+        </div>
+     </div>
     
-    <a href="./planets/earth.html" class="planet earth">
-        <img src="./images/earth1.jpg" alt="Earth">
-        <span>Earth</span>
-    </a>
+    <!-- Reference links to other webpage -->
+    <h2>Choose which one to explore</h2>
+    <div class="planet-links">
+        <a href="./sun.html" class="planet-card">
+            <img src="./images/sun1.jpg" alt="Sun">
+            <span>Sun</span>
+        </a>
 
-    <a href="./planets/venus.html" class="planet venus">
-        <img src="./images/venus1.jpg" alt="Venus">
-        <span>Venus</span>
-    </a>
+        <a href="./moon.html" class="planet-card">
+            <img src="./images/moon1.jpg" alt="Moon">
+            <span>Moon</span>
+        </a>
+    
+        <a href="./planets/mercury.html" class="planet-card">
+            <img src="./images/mercury1.jpg" alt="Mercury">
+            <span>Mercury</span>
+        </a>
 
-    <a href="./planets/mercury.html" class="planet mercury">
-        <img src="./images/mercury1.jpg" alt="Mercury">
-        <span>Mercury</span>
-    </a>
+        <a href="./planets/venus.html" class="planet-card">
+            <img src="./images/venus1.jpg" alt="Venus">
+            <span>Venus</span>
+        </a>
 
+        <a href="./planets/earth.html" class="planet-card">
+            <img src="./images/earth1.jpg" alt="Earth">
+            <span>Earth</span>
+        </a>
+
+        <a href="./planets/mars.html" class="planet-card">
+            <img src="./images/mars1.jpg" alt="Mars">
+            <span>Mars</span>
+        </a>
+
+        <a href="./planets/jupiter.html" class="planet-card">
+            <img src="./images/jupiter1.jpg" alt="Jupiter">
+            <span>Jupiter</span>
+        </a>
+
+        <a href="./planets/saturn.html" class="planet-card">
+            <img src="./images/saturn1.jpg" alt="Saturn">
+            <span>Saturn</span>
+        </a>
+
+        <a href="./planets/uranus.html" class="planet-card">
+            <img src="./images/uranus1.jpg" alt="Uranus">
+            <span>Uranus</span>
+        </a>
     </div>
 
-    <button onclick="alert('Boom!');">
-        DO NOT PRESS
-    </button>
-    
+    <script src="js/home.js"></script>
 </body>
 </html>
