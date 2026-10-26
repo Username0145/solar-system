@@ -4,60 +4,75 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Moon</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/moon.css">
 </head>
 <body class="moon-page">
 
-    <div class="header-moon">
-         <h1>What is the moon?</h1>
+    <!-- Navigation bar -->
+    <nav class="navbar">
+        <a href="index.html">Home</a>
+        <a href="sun.html">Sun</a>
+        <a href="moon.html" class="active">Moon</a>
+        <a href="planets/earth.html">Earth</a>
+        <a href="planets/mercury.html">Mercury</a>
+        <a href="planets/venus.html">Venus</a>
+        <a href="planets/mars.html">Mars</a>
+        <a href="planets/jupiter.html">Jupiter</a>
+        <a href="planets/saturn.html">Saturn</a>
+        <a href="planets/uranus.html">Uranus</a>
+    </nav>
+
+    <!-- Title and main image -->
+    <header class="page-header">
+        <h1>The moon</h1>
+    </header>
+
+    <div class="sub-text">
+        <img src="images/moon.jpg" alt="An image of the Moon" width="350" height="250">
+        <p>The <strong>Moon</strong> is the only natural stellite</p>
     </div>
 
-    <div class="subtext-three">
-        <img src="images/moon.jpg" alt="A image of the Moon" width="350" height="250">
-        <p>The <strong>Moon</strong> is the only natural stellite of Earth</p>
+    <main class="container">
 
-    </div>
-
-
-    <div class="container-three">
-        <div class="top-three">
+        <!-- Fun facts -->
+        <section class="card">
             <h3>Fun Facts about the <strong>Moon</strong></h3>
             <ul>
-            <li>
-                <p>
-                The <strong>Moon</strong> is slowly moving away from Earth, getting
-                about an inch farther away from each other.
-            </p></li>
-
-            <li>
-                <p>
-                The moon likely formed after a Mars-sized collided with 
-                Earth several billions years ago
-            </p></li>
-
-            <li>
-                <p>
-                    The <strong>Moon</strong> has a core, mantle, and crust.
+                <li>The <strong>Moon</strong> is slowly moving away from Earth, getting
+                    about an inch farther away from each other.
+                </li>
+                <li>The moon likely formed after a Mars-sized collided with 
+                    Earth several billions years ago
+                </li>
+                <li>The <strong>Moon</strong> has a core, mantle, and crust.
                     Long ago the Moon had active volcanos, but today they are 
                     all dormant and have not erupted for millions of years.
-            </p></li>
-        </ul>
-    </div>
+                </li>
+            </ul>
+            <img src="picture.jpg" alt="Something about the moon" width="350">
+        </section>
 
-    <div class="middle-three">
+    <section class="card">
         <h3>WHy is the <strong>Moon</strong> is important?</h3>
         <p>
             The Moon is vitual to Earth because its gravity controls our ocean tides,
             keeps our climate stable, and lengthens our days into a predictable
             24-hour cycle.
         </p>
-    </div>
+    </section>
 
-    <div class="end-three">
+    <!-- js feauture -->
+    <section class="card">
         <h3>How much do you weigh if you were in the Moon ?</h3>
-    </div>
+        <p>Enter your weight.</p>
+        <input type="number" id="weight" min="1" placeholder="Your weight">
+        <button class="btn" id="calc">Calculate</button>
+        <p class="output" id="result"></p>
+    </section>
 
-</div>
-    
+    </main>
+
+    <script src="js/moon.js"></script>
 </body>
 </html>
