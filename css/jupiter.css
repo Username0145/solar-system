@@ -1,0 +1,19 @@
+/* Styling for Jupiter webpage */
+.jupiter-page {
+    --page-bg: #C99B6D;
+    --text: #2b1608;
+    --nav-bg: #6b3a1f;
+    --nav-text: white;
+    --card-bg: #8C5A3C;
+    --card-border: #2b1608;
+    --card-text: white;
+    --heading-bg: #6b3a1f;
+    --font: Palatino Linotype, serif;
+}
+
+/* Jupiter's cloud bands */
+.jupiter-page {
+    background-image: repeating-linear-gradient(#C99B6D 0 60px, #E6CFA8 60px 100px,
+                                                #A9714B 100px 150px, #F0E2C6 150px 180px);
+}
+#answers .btn { margin: 4px; }

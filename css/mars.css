@@ -1,0 +1,24 @@
+/* styling for Mars webpage */
+.mars-page {
+    --page-bg: #8B3A1E;
+    --text: white;
+    --nav-bg: #3b1206;
+    --nav-text: white;
+    --card-bg: #C1440E;
+    --card-border: #3b1206;
+    --card-text: white;
+    --heading-bg: #7a2a0a;
+    --font: Trebuchet MS, sans-serif;
+}
+
+/* Hidden "read more" text blocks */
+.more { 
+    margin: 8px 0 16px; 
+    padding: 10px; 
+    background: rgba(0, 0, 0, 0.25); 
+    border-radius: 8px; 
+}
+.read-btn { 
+    display: block; 
+    margin-top: 10px; 
+}

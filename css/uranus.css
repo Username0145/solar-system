@@ -1,0 +1,31 @@
+.uranus-page {
+    --page-bg: #AEE6E8;
+    --text: #06353a;
+    --nav-bg: #1b6f78;
+    --nav-text: white;
+    --card-bg: #2a7f86;
+    --card-border: #06353a;
+    --card-text: white;
+    --heading-bg: #145a62;
+    --font: Trebuchet MS, sans-serif;
+}
+
+/* The planet is a circle; the white line is its spin axis */
+.tilt-box { 
+    position: relative; 
+    width: 160px; 
+    height: 160px; 
+    margin: 50px auto; 
+    border-radius: 50%;
+    background: radial-gradient(circle at 35% 35%, #d4f8fa, #5cc3cb); 
+}
+.tilt-box::after { 
+    content: ""; 
+    position: absolute; 
+    left: 50%; 
+    top: -30px; 
+    width: 4px; 
+    height: 220px;
+    margin-left: -2px; 
+    background: white; 
+}

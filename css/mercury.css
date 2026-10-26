@@ -1,0 +1,29 @@
+/*Styling webpage for Mercury  */
+.mercury-page {
+    --page-bg: #504E51;
+    --text: white;
+    --nav-bg: #222;
+    --nav-text: white;
+    --card-bg: #CECCD1;
+    --card-border: #000;
+    --card-text: #111;
+    --heading-bg: #222;
+    --font: Courier New, monospace;
+}
+
+/* Day & night panel */
+.surface { 
+    padding: 30px; 
+    margin-bottom: 15px; 
+    border-radius: 10px; 
+    font-size: 22px;
+    font-weight: bold; text-align: center; 
+}
+.day   { 
+    background: #ff9a3c; 
+    color: #222; 
+}
+.night { 
+    background: #0b0b2a; 
+    color: #9ec9ff; 
+}

@@ -1,0 +1,12 @@
+/* Styling webpage for Venus */
+.venus-page {
+    --page-bg: #ECE6D0;
+    --text: black;
+    --nav-bg: #7a3b0c;
+    --nav-text: white;
+    --card-bg: #B35C1E;
+    --card-border: #4A3525;
+    --card-text: white;
+    --heading-bg: #7a3b0c;
+    --font: Georgia, serif;
+}

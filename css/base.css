@@ -95,8 +95,14 @@ body {
     font-weight: bold;
     cursor: pointer;
 }
-.btn:hover { filter: brightness(1.25); }
-input, select { padding: 8px; border-radius: 6px; font-family: inherit; }
+.btn:hover { 
+    filter: brightness(1.25); 
+}
+input, select { 
+    padding: 8px; 
+    border-radius: 6px; 
+    font-family: inherit; 
+}
 .output {
     margin-top: 12px;
     padding: 10px;
@@ -104,3 +110,5 @@ input, select { padding: 8px; border-radius: 6px; font-family: inherit; }
     background-color: rgba(0, 0, 0, 0.25);
     border-radius: 8px;
 }
+
+.hidden {display: none !important;}

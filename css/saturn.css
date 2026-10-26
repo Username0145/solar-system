@@ -1,0 +1,48 @@
+/* Styling for Saturn webpage */
+.saturn-page {
+    --page-bg: #E8D9A8;
+    --text: #3d2f0f;
+    --nav-bg: #7a5c12;
+    --nav-text: white;
+    --card-bg: #A68B4B;
+    --card-border: #3d2f0f;
+    --card-text: white;
+    --heading-bg: #6e5416;
+    --font: Garamond, Georgia, serif;
+}
+
+/* The bathtub: light blue "air" on top, darker blue water below */
+.tub { 
+    position: relative; 
+    height: 200px; 
+    margin-bottom: 15px; 
+    overflow: hidden;
+    border: 3px solid #3d2f0f; 
+    background: linear-gradient(#cfe8ff 0 40%, #3a8fd8 40%); 
+}
+.ball { 
+    position: absolute; 
+    top: 5px; 
+    width: 70px; 
+    height: 70px; 
+    border-radius: 50%;
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    font-weight: bold;
+    transition: top 1.5s; 
+}
+.saturn-ball { 
+    left: 20%; 
+    background: #e0c070; 
+    color: #3d2f0f; 
+}
+.earth-ball  { 
+    left: 60%; 
+    background: #2a6fd6; 
+    color: white; 
+}
+
+/* After the drop: Saturn floats, Earth sinks */
+.in-water .saturn-ball { top: 50px; }
+.in-water .earth-ball  { top: 125px; }

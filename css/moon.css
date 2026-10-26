@@ -1,0 +1,11 @@
+.moon-page {
+    --page-bg: #1c1c22;
+    --text: white;
+    --nav-bg: #444;
+    --nav-text: white;
+    --card-bg: #8a8a92;
+    --card-border: #d0d0d8;
+    --card-text: #111;
+    --heading-bg: #55555e;
+    --font: Courier New, monospace;
+}
