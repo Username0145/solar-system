@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saturn</title>
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/saturn.css">
+</head>
+<body class="saturn-page">
+    
+     <!-- Navigation bar -->
+    <nav class="navbar">
+        <a href="../index.html">Home</a>
+        <a href="../sun.html">Sun</a>
+        <a href="../moon.html">Moon</a>
+        <a href="earth.html">Earth</a>
+        <a href="mercury.html">Mercury</a>
+        <a href="venus.html">Venus</a>
+        <a href="mars.html">Mars</a>
+        <a href="jupiter.html">Jupiter</a>
+        <a href="saturn.html" class="active">Saturn</a>
+        <a href="uranus.html">Uranus</a>
+    </nav>
+
+    <!-- Main header -->
+    <header class="page-header">
+        <h1>Saturn: Lord of the Rings</h1>
+    </header>
+
+    <div class="sub-text">
+        <img src="../images/saturn.jpg" alt="Saturn with its bright rings" width="350" height="350">
+        <p><strong>Saturn</strong> is famous for its beautiful rings</p>
+    </div>
+
+    <main class="container">
+
+        <!-- Facts (second image at the bottom) -->
+        <section class="card">
+            <h3>Fun Facts about Saturn</h3>
+            <ul>
+                <li>Saturn is the sixth planet from the Sun, about 1.4 billion km away.</li>
+                <li>It is the second largest planet, about 9 times wider than Earth.</li>
+                <li>A day on Saturn is about 10.7 hours long.</li>
+                <li>One year on Saturn takes about 29 Earth years.</li>
+                <li>Saturn is less dense than water, so it would float in a big enough bathtub.</li>
+                <li>Its rings are made mostly of water ice and are very thin for their size.</li>
+                <li>Saturn has well over 100 known moons.</li>
+                <li>Its moon Titan is bigger than the planet Mercury.</li>
+            </ul>
+            <img src="../images/saturn2.jpg" alt="Close-up of Saturn's rings made of ice" width="350">
+        </section>
+
+        <!-- JS feature -->
+        <section class="card">
+            <h3>Would Saturn Float?</h3>
+            <p>Saturn is less dense than water. Drop two planets in a giant bathtub!</p>
+            <div class="tub" id="tub">
+                <div class="ball saturn-ball">Saturn</div>
+                <div class="ball earth-ball">Earth</div>
+            </div>
+            <button class="btn" id="drop">Drop them in the water</button>
+        </section>
+
+    </main>
+
+    <script src="../js/saturn.js"></script>
+</body>
+</html>

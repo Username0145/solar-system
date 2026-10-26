@@ -4,69 +4,77 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mercury</title>
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/mercury.css">
 </head>
 <body class="mercury-page">
-    <div class="header-mercury">
-         <h1>What is the Mercury?</h1>
-    </div>
 
-    <div class="subtext-five">
+    <!-- Navigation bar -->
+    <nav class="navbar">
+        <a href="../index.html">Home</a>
+        <a href="../sun.html">Sun</a>
+        <a href="../moon.html">Moon</a>
+        <a href="earth.html">Earth</a>
+        <a href="mercury.html" class="active">Mercury</a>
+        <a href="venus.html">Venus</a>
+        <a href="mars.html">Mars</a>
+        <a href="jupiter.html">Jupiter</a>
+        <a href="saturn.html">Saturn</a>
+        <a href="uranus.html">Uranus</a>
+    </nav>
+
+    <!-- The Title and Mercury's webpage -->
+    <header class="page-header">
+         <h1>Mercury</h1>
+    </header>
+
+    <div class="sub-text">
         <img src="../images/mercury.jpg" alt="A image of planet Mercury" width="350" height="350">
         <p>The planet <strong>Mercury</strong>, picture taken by MESSENGER in 2008</p>
     </div>
 
-<div class="container-five">
+    <main class="container">
 
-    <div class="top-five">
-        <h3>Fun Facts about the planet <strong>Mercury</strong></h3>
-        <ul>
-            <li>
-                <p>
-                <strong>Mercury</strong> is the first planet from the sun and the smallest in 
-                the solar system. (About 3,032 miles or 4880 kilometers)
-                </p></li>
+        <!-- Fun facts about mercury -->
+        <section class="card">
+            <h3>Fun Facts about the planet <strong>Mercury</strong></h3>
+            <ul>
+                <li>
+                    <strong>Mercury</strong> is the first planet from the sun and the smallest in 
+                    the solar system. (About 3,032 miles or 4880 kilometers)
+                </li>
 
-            <li>
-                <p>
-                The surface of Mercury is similar to Earth's moon.
-                </p>
-            </li>
+                <li>
+                    The surface of Mercury is similar to Earth's moon.
+                </li>
 
-            <li>
-                <p>
+                <li>
                     Takes only 88 days to orbit the Sun
-                </p>
-            </li>
+                </li>
 
-            <li>
-                <p>
+                <li>
                     The temperature on Mercury is 870 Ferhenheit degrees (470 Celsilus), 
                     the lowest temperature is -300 Ferhenheit degrees (-184 Celsilus)
-                </p>
-            </li>
+                </li>
 
-            <li>
-                <p>
+                <li>
                     Mercury dosen't have any moons
-                </p>
-            </li>
-        </ul>
-    </div>
+                </li>
+            </ul>
+            <img src="../images/mercury2.jpg" alt="something" width="350">
+        </section>
 
-    <div class="middle-five">
-        <h3>WHy is <strong>Mercury</strong> important?</h3>
-        <p>
-            The shocking reveal on how <strong>Mercury</strong> orbit the sun one time, 
-            with extreme temperature, making those discoveries helpful to scientists to understand
-            how rocky planets evolve. 
-        </p>
-    </div>
+        <!-- js feature -->
+        <section class="card">
+            <h3>Day Side vs. Night Side</h3>
+            <div id="surface" class="surface day">
+                <p id="temp">Day side: 430°C (800°F)</p>
+            </div>
+            <button class="btn" id="toggle">Switch to night side</button>
+        </section>
 
-    <div class="end-five">
-        <h3>How much do you weigh if you were in Mercury ?</h3>
-    </div>
-</div>
-    
+    </main>
+
+    <script src="../js/mercury.js"></script>
 </body>
 </html>

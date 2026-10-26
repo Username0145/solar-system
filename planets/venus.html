@@ -4,56 +4,69 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>venus</title>
-    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/venus.css">
 </head>
 <body class="venus-page">
 
-    <div class="header-venus">
-         <h1>What is the Venus?</h1>
-    </div>
+    <!-- Navigation bar -->
+    <nav class="navbar">
+        <a href="../index.html">Home</a>
+        <a href="../sun.html">Sun</a>
+        <a href="../moon.html">Moon</a>
+        <a href="earth.html">Earth</a>
+        <a href="mercury.html">Mercury</a>
+        <a href="venus.html" class="active">Venus</a>
+        <a href="mars.html">Mars</a>
+        <a href="jupiter.html">Jupiter</a>
+        <a href="saturn.html">Saturn</a>
+        <a href="uranus.html">Uranus</a>
+    </nav>
 
-    <div class="subtext-two">
-        <img src="../images/venus.jpg" alt="A image of the Venus" width="350" height="350">
+    <!-- Title -->
+    <header class="page-header">
+         <h1>Venus</h1>
+    </header>
+
+    <div class="sub-text">
+        <img src="../images/venus.jpg" alt="An image of the Venus" width="350" height="350">
         <p><strong>Venus</strong> is the second planet from the Sun</p>
     </div>
 
-<div class="container-two">
+    <main class="container">
 
-    <div class="top-two">
-        <h3>Fun Facts about <strong>Venus</strong></h3>
-        <ul>
-            <li>
-                <p>
-                <strong>Venus</strong> has no liquid water, and its atmosphere is far 
-                thicker and denser than that of any other rocky body in the solar system
-            </p></li>
-
-            <li>
-                <p>
-                The atmoshere is composed mostly of carbon dioxide and has a thick cloud
-                layer of sulfuric acid that spans the whole planet.
-            </p></li>
-
-            <li>
-                <p>
-                    Venus is one of the four terrestrial planets in the Solar System.
+        <!-- Fun Facts -->
+        <section class="card">
+            <h3>Fun Facts about <strong>Venus</strong></h3>
+            <ul>
+                <li><strong>Venus</strong> has no liquid water, and its atmosphere is far 
+                    thicker and denser than that of any other rocky body in the solar system
+                </li>
+                <li>The atmoshere is composed mostly of carbon dioxide and has a thick cloud
+                    layer of sulfuric acid that spans the whole planet.
+                </li>
+                <li>Venus is one of the four terrestrial planets in the Solar System.
                     It is similar to Earth in size and mass and is often described as Earth's twin.
-            </p></li>
-        </ul>
-    </div>
+                </li>
+            </ul>
+            <img src="../images/venus2.jpg" alt="image" width="350">
+        </section>
 
-    <div class="middle-two">
-        <h3>WHy is <strong>Venus</strong> is important?</h3>
-        <p>Serves as a vitual natual laboratory for understanding extreme
-            climate change,planetary evolution, and the limits of habitability
-            on rocky, Earth-sized worlds.
-        </p>
-    </div>
-
-    <div class="end-two">
-        <h3>How much do you weigh if you were in Venus ?</h3>
-    </div>
-</div>
+        <!-- JavaScript feature -->
+        <section class="card">
+            <h3>Could It Survive 465°C?</h3>
+            <p>Pick something to send to the surface of Venus:</p>
+            <select id="item">
+                <option value="">-- choose --</option>
+                <option value="water">A glass of water</option>
+                <option value="lead">A lead brick</option>
+                <option value="chocolate">A chocolate bar</option>
+                <option value="paper">A sheet of paper</option>
+            </select>
+            <p class="output" id="outcome"></p>
+        </section>
+        
+    </main>
     
 </body>
 </html>

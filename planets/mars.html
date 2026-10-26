@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mars</title>
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/mars.css">
+</head>
+<body class="mars-page">
+    
+    <!-- Navigation bar -->
+    <nav class="navbar">
+        <a href="../index.html">Home</a>
+        <a href="../sun.html">Sun</a>
+        <a href="../moon.html">Moon</a>
+        <a href="earth.html">Earth</a>
+        <a href="mercury.html">Mercury</a>
+        <a href="venus.html">Venus</a>
+        <a href="mars.html" class="active">Mars</a>
+        <a href="jupiter.html">Jupiter</a>
+        <a href="saturn.html">Saturn</a>
+        <a href="uranus.html">Uranus</a>
+    </nav>
+
+    <!-- Title and main image -->
+    <header class="page-header">
+        <h1>Mars: The Red Planet</h1>
+    </header>
+
+    <div class="sub-text">
+        <img src="../images/mars.jpg" alt="Mars, a red-orange planet" width="350" height="350">
+        <p><strong>Mars</strong> gets its red color from rusty iron in its soil</p>
+    </div>
+
+    <main class="container">
+
+        <!-- Facts (second image at the bottom) -->
+        <section class="card">
+            <h3>Mars Facts</h3>
+            <ul>
+                <li>Mars is the fourth planet from the Sun, about 228 million km away.</li>
+                <li>It is 6,779 km wide, about half the size of Earth.</li>
+                <li>A day on Mars is 24 hours and 37 minutes. A year is 687 Earth days.</li>
+                <li>Mars has two small moons, Phobos and Deimos.</li>
+                <li>The average temperature is about -63°C (-81°F).</li>
+                <li>Olympus Mons is the tallest volcano in the solar system, about 22 km high.</li>
+                <li>Valles Marineris is a canyon more than 4,000 km long.</li>
+                <li>Mars looks red because its dust contains iron oxide, or rust.</li>
+            </ul>
+            <img src="../images/mars2.jpg" alt="A rover on the rocky red surface of Mars" width="350">
+        </section>
+
+        <!-- JavaScript feature -->
+        <section class="card">
+            <h3>Read More About Mars</h3>
+            <button class="btn read-btn" data-target="more1">Olympus Mons</button>
+            <p class="more hidden" id="more1">Olympus Mons is an extinct volcano about 22 km tall, nearly three times the height of Mount Everest.</p>
+
+            <button class="btn read-btn" data-target="more2">Water on Mars</button>
+            <p class="more hidden" id="more2">Mars once had rivers and lakes. Today most of its water is frozen in the polar ice caps and underground.</p>
+
+            <button class="btn read-btn" data-target="more3">Rovers</button>
+            <p class="more hidden" id="more3">NASA's Perseverance rover landed in Jezero Crater in 2021 to search for signs of ancient life and collect rock samples.</p>
+        </section>
+
+    </main>
+
+    <script src="../js/mars.js"></script>
+</body>
+</html>

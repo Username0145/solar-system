@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uranus</title>
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/uranus.css">
+
+</head>
+<body class="uranus-page">
+    
+     <!-- Navigation bar -->
+    <nav class="navbar">
+        <a href="../index.html">Home</a>
+        <a href="../sun.html">Sun</a>
+        <a href="../moon.html">Moon</a>
+        <a href="earth.html">Earth</a>
+        <a href="mercury.html">Mercury</a>
+        <a href="venus.html">Venus</a>
+        <a href="mars.html">Mars</a>
+        <a href="jupiter.html">Jupiter</a>
+        <a href="saturn.html">Saturn</a>
+        <a href="uranus.html" class="active">Uranus</a>
+    </nav>
+
+    <!-- Main headline -->
+    <header class="page-header">
+        <h1>Uranus: The Sideways Planet</h1>
+    </header>
+
+    <div class="sub-text">
+        <img src="../images/uranus.jpg" alt="Uranus, a pale blue-green planet" width="350" height="350">
+        <p><strong>Uranus</strong> is an ice giant that spins on its side</p>
+    </div>
+
+    <main class="container">
+
+        <!-- Fun Facts -->
+        <section class="card">
+            <h3> Fun Facts about Uranus</h3>
+            <ul>
+                <li>Uranus is the seventh planet from the Sun, about 2.9 billion km away.</li>
+                <li>It is an ice giant about 50,724 km wide, roughly 4 times wider than Earth.</li>
+                <li>Uranus is tilted about 98°, so it spins on its side.</li>
+                <li>One year on Uranus takes 84 Earth years.</li>
+                <li>A day on Uranus is about 17 hours long.</li>
+                <li>Its atmosphere is the coldest of any planet, down to -224°C (-371°F).</li>
+                <li>Uranus has at least 28 moons and 13 rings.</li>
+                <li>William Herschel discovered it in 1781, the first planet found with a telescope.</li>
+                <li>Methane in its air gives it a blue-green color.</li>
+            </ul>
+            <img src="../images/uranus2.jpg" alt="Uranus with its faint rings" width="350">
+        </section>
+
+        <!-- JavaScript feature -->
+        <section class="card">
+            <h3>Tilt Uranus</h3>
+            <p>Uranus is tilted about 98°. Move the slider to tilt it!</p>
+            <div class="tilt-box" id="tilt-box"></div>
+            <input type="range" id="tilt" min="0" max="98" value="0">
+            <p class="output" id="tilt-text">Tilt: 0°</p>
+        </section>
+
+    </main>
+
+    <script src="../js/uranus.js"></script>
+</body>
+</html>
