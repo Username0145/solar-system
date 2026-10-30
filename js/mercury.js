@@ -9,11 +9,11 @@ toggle.addEventListener("click", function () {
 
     if (isDay) {
         surface.className = "surface day";
-        temp.textContent = "Day side: 430°C (800°F)";
+        temp.textContent = "Day side: 470°C (870°F)";
         toggle.textContent = "Switch to night side";
     } else {
         surface.className = "surface night";
-        temp.textContent = "Night side: -180°C (-290°F)";
+        temp.textContent = "Night side: -184°C (-300°F)";
         toggle.textContent = "Switch to day side";
     }
 });

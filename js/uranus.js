@@ -9,6 +9,6 @@ slider.addEventListener("input", function () {
 
     text.textContent = "Tilt: " + degrees + "°";
     if (degrees === 98) {
-        text.textContent += " (this is how Uranus really spins: on its side!)";
+        text.textContent += " (this is how Uranus spins: on its side!)";
     }
 });

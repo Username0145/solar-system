@@ -2,8 +2,8 @@
 
 // Text to display for each layer
 const layerInfo = {
-    "crust": "The crust is Earth's thin outer shell, where we live. It is only about 5 to 70 km thick.",
-    "mantle": "The mantle is about 2,900 km thick and makes up most of Earth's volume. It is hot, slowly flowing rock.",
+    "crust": "The crust is dry land above sea level with about 2.83 g/cm3 (0.102 lb/cu in) of density",
+    "mantle": "The mantle, also called the mesosphere occupies about 56% of the total valoume of Earth and it is a hot, slowly flowing rock.",
     "outer-core": "The outer core is a layer of liquid iron and nickel. Its movement creates Earth's magnetic field.",
     "inner-core": "The inner core is a solid ball of iron and nickel. It is roughly as hot as the surface of the Sun."
 };
