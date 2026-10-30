@@ -11,6 +11,10 @@
     --font: Garamond, Georgia, serif;
 }
 
+.card p {
+    text-align: center;
+}
+
 /* The bathtub: light blue "air" on top, darker blue water below */
 .tub { 
     position: relative; 
