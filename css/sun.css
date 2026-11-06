@@ -10,6 +10,10 @@
     --font: Trebuchet MS, sans-serif;
 }
 
+.card p {
+    text-align: center;
+}
+
 /* Pop up modal */
 .modal { 
     display: none; 
